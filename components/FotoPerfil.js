@@ -3,7 +3,7 @@ import {useDropzone} from 'react-dropzone'
 import Swal from 'sweetalert2';
 import {authAxios} from '../config/axios';
 
-export default function FotoPerfil() {
+export default function FotoPerfil({setData}) {
 
 
       const onDropRejected = (message=null) => {
@@ -37,7 +37,7 @@ export default function FotoPerfil() {
        try{
          const result = await authAxios.post('photo',formData);
 
-         console.log(result.data);
+         setData(result.data);
          
        }catch(error){
         onDropRejected()

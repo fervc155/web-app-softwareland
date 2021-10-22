@@ -184,7 +184,7 @@ const Home = () => {
                <Photo className="card-img-top mb-5"  src={data.photo ||''}/> 
               
 
-              <FotoPerfil  />
+              <FotoPerfil setData={setData} />
         </div>
         </div>
 
