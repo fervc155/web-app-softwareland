@@ -31,7 +31,7 @@ const Cvs = ({cv})=>{
   		<h5 className="card-title">{cv.name}</h5>
       <TableProfile data={cv} />
 
-  		<Link href={`/cv/${cv.email}`}><Button className="btn btn-primary"> Ver CV</Button></Link>
+  		<Link href={`/cv/${cv.email || ''}`}><Button className="btn btn-primary"> Ver CV</Button></Link>
   	</div>
 
   </div>

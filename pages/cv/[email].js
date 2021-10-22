@@ -3,7 +3,7 @@ import Layout from '../../components/layout/layout'
 
 import Cv_template from '../../components/cv_template';
 import Swal from 'sweetalert2';
-import {clienteAxios} from '../../config/axios';
+import clienteAxios from '../../config/axios';
 import {useRouter} from 'next/router'
 const Cv = (props)=>{
 

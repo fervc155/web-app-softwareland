@@ -22,12 +22,10 @@ const Cv = (props)=>{
         setList(result.data);
 
 
-        console.log('god',result);
-
- 
+       
        }catch(error){
        
-        console.log('bad',error);
+      
       }
       
     }
