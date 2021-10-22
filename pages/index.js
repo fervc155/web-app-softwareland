@@ -18,7 +18,7 @@ const Home = () => {
           const result = await clienteAxios.get('/');
           setList(result.data);
 
-          console.log(result);
+          console.log(process.env.backurl,result.data);
         }catch(error){
 
     Swal.fire({

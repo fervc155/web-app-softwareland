@@ -2,50 +2,45 @@ import react from 'react';
 import {css} from '@emotion/react';
 import styled from '@emotion/styled'
 
-const Tr = styled.tr`
-
-	th{
-		
-	padding-right:1rem;
-	}
-
- `;
+ 
 const TableProfile = ({data})=>{
   
   return(
  <table css={css`font-size:14px`}>
- 		  		<Tr>
+ <tbody>
+ 		  		<tr>
  		  			<th>Nombre</th>
  		  			<td>{data.name}</td>
- 		  		</Tr>
- 		  				<Tr>
+ 		  		</tr>
+ 		  				<tr>
  		  			<th>Profesion</th>
  		  			<td>{data.profesion}</td>
- 		  		</Tr>
- 		  		  		<Tr>
+ 		  		</tr>
+ 		  		  		<tr>
  		  			<th>Web</th>
  		  			<td>{data.web}</td>
- 		  		</Tr>
- 		  		  		<Tr>
+ 		  		</tr>
+ 		  		  		<tr>
  		  			<th>Telefono</th>
  		  			<td>{data.phone}</td>
- 		  		</Tr>
- 		  		  		<Tr>
+ 		  		</tr>
+ 		  		  		<tr>
  		  			<th>Email</th>
  		  			<td>{data.email}</td>
- 		  		</Tr>
- 		  			  		<Tr>
+ 		  		</tr>
+ 		  			  		<tr>
  		  			<th>Sexo</th>
  		  			<td>{data.sex}</td>
- 		  		</Tr>
+ 		  		</tr>
 
 	  
-	  		<Tr>
+	  		<tr>
  		  			<th>Direccion</th>
  		  			<td>{data.address}</td>
- 		  		</Tr>
+ 		  		</tr>
 
 
+ </tbody>
  		  		</table>
   );
 }
