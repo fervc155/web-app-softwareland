@@ -9,9 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.15.8",
+    "@emotion/babel-preset-css-prop": "^11.2.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "axios": "^0.17.1",
+    "babel-plugin-emotion": "^11.0.0",
+    "jwt-decode": "^3.1.2",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-dropzone": "^11.4.2",
+    "sweetalert2": "^11.1.9"
   },
   "devDependencies": {
     "eslint": "8.0.1",
