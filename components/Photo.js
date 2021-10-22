@@ -2,7 +2,7 @@ import react from 'react';
 
 const Photo = ({src,className})=>{
 
-	const backurl= 'https://morning-coast-45481.herokuapp.com';
+	const backurl= process.env.backurl;
 
 	if(src=='')
 		return null;

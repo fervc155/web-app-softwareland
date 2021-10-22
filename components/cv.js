@@ -29,7 +29,7 @@ const Cvs = ({cv})=>{
   	 
   	<div className="card-body">
   		<h5 className="card-title">{cv.name}</h5>
-      <TableProfile data={cv} />
+      <TableProfile key={cv.id} data={cv} />
 
   		<Link href={`/cv/${cv.email || ''}`}><Button className="btn btn-primary"> Ver CV</Button></Link>
   	</div>
