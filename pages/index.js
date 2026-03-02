@@ -39,7 +39,7 @@ const Home = () => {
 
   const Hero = ()=>(
     <>
-    <h1  >CV Sender</h1>
+    <h1 className="mt-5 pt-5"  >CV Sender</h1>
     <h2   >Una forma mas facil de crear y compartir tu CV</h2>
 
 
